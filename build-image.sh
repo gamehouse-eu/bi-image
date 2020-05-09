@@ -52,7 +52,6 @@ apt-get install -y python3-cffi
 apt-get install -y python3-xlrd
 apt-get install -y python3-lxml
 apt-get install -y python3-yaml
-apt-get install -y python3-kubernetes
 
 pip3 install iso3166 \
              iso4217 \
@@ -67,7 +66,8 @@ pip3 install iso3166 \
              apache_log_parser
 
 pip3 install google-cloud-storage \
-             google-cloud-bigquery
+             google-cloud-bigquery \
+             kubernetes
 
 # only for the tests
 pip3 install pytest
