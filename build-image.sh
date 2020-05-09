@@ -40,9 +40,6 @@ gcloud config set disable_usage_reporting true
 wget -q -O /usr/local/bin/cloud_sql_proxy https://dl.google.com/cloudsql/cloud_sql_proxy.linux.amd64
 chmod +x /usr/local/bin/cloud_sql_proxy
 
-# clean apt downloaded files from
-rm -rf /var/lib/apt/lists/*
-
 # this should be installed separately or yajl-py will fail
 apt-get install -y python3-six
 apt-get install -y python3-psycopg2
@@ -74,3 +71,6 @@ pip3 install google-cloud-storage \
 
 # only for the tests
 pip3 install pytest
+
+# clean apt downloaded files from
+rm -rf /var/lib/apt/lists/*
