@@ -45,7 +45,6 @@ apt-get install -y python3-six
 apt-get install -y python3-psycopg2
 apt-get install -y python3-requests
 apt-get install -y python3-rarfile
-apt-get install -y python3-ujson
 apt-get install -y python3-ijson
 apt-get install -y python3-dateutil
 apt-get install -y python3-pyodbc
@@ -61,6 +60,7 @@ pip3 install iso3166 \
              fastavro \
              envkey \
              pylint \
+             ujson==2.0.3 \
              falcon==1.4.1 \
              falcon-cors==1.1.7 \
              uwsgi \
